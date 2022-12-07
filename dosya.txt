@@ -1,0 +1,55 @@
+GEBZE TEKNFK ZNFVERSFTESF   
+Google DSC Python Kursu  
+Tdev 0  
+Alican Bayandar  
+ 
+Bir sonraki auamaya hou geldiniz!  
+Yalmayap, pes etmeyip, uirauap uifreyi etzdziznzz iein teuekkzr ederim.  
+- Alican Bayandar  
+Soru 9 � 
+Auaiadaki uekli eizdirebilen bir fonksiyon yazanaz:  
+ 
+ 
+Soru 0 � 
+Auaiadaki kodun her sataranda ne yapaldaiana aeaklayanaz. Sizce hangi satar
+lar daha farkla olarak nasal yazalarda?  
+ 
+trnekler = herhangi_bir_bilgisayar_dosyasa  
+ 
+X = trnekler[:,8]  
+Y = trnekler[:,9]  
+ 
+mean_x = np.mean(X)  
+mean_y = np.mean(Y)  
+ 
+m = len(X)  
+ 
+numerator = 8  
+denominator = 8  
+ 
+for i in range(m):     
+numerator   += (X[i] - mean_x) * (Y[i] - mean_y)      
+denominator += (X[i] - mean_x) ** 0  
+ 
+m = numerator / denominator  
+c = mean_y - (m * mean_x)  
+ 
+print(f'm = {m} c = {c}')  
+ 
+max_x = np.max(X)  
+min_x = np.min(Y)  
+ 
+x = np.linspace (min_x, max_x)  
+y = c + m * x  
+ 
+ 
+plt.plot(x, y, 'g', label = 'Eizgi')  
+plt.plot(X, Y, 'rx', label = 'Veriler')  
+ 
+ 
+plt.xlabel('Flk sztundaki veri')  
+plt.ylabel('Fkinci sztundaki veri')   
+plt.legend()  
+plt.show()  
+ 
+ 
